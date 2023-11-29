@@ -1,0 +1,42 @@
+.wrapper {
+    padding: 2rem var(--horizontal_padding);
+    background: var(--accent_color);
+    border-radius: var(--image_b_rad);
+}
+
+.investment_section {
+    padding: 2rem var(--horizontal_padding);
+}
+
+.img {
+    border-top-left-radius: calc(var(--image_b_rad) - 5px);
+    border-top-right-radius: calc(var(--image_b_rad) - 5px);
+}
+
+.details_wrapper>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+}
+
+.details_wrapper {
+    background: var(--pure_white);
+    padding: 2rem var(--horizontal_padding);
+    border-bottom-left-radius: calc(var(--image_b_rad) - 5px);
+    border-bottom-right-radius: calc(var(--image_b_rad) - 5px);
+}
+
+.details_wrapper p {
+    margin: 0;
+}
+
+@media screen and (min-width:1000px) {
+    .wrapper {
+        display: flex;
+    }
+
+    .img_wrapper,
+    .details_wrapper {
+        width: 50%;
+    }
+}

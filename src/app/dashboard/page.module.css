@@ -1,0 +1,25 @@
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 var(--horizontal_padding);
+    gap: 1.3rem;
+}
+
+.grid_container div {
+    background: var(--accent_color);
+    border-radius: var(--image_b_rad);
+    text-align: center;
+}
+
+.heading {
+    font-size: 1rem;
+    padding: 3rem var(--horizontal_padding) 0.3rem;
+    font-weight: 500 !important;
+    margin-top: 0;
+}
+
+@media screen and (min-width:700px) {
+    .heading {
+        padding-top: 0;
+    }
+}

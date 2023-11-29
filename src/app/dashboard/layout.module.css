@@ -1,0 +1,47 @@
+.aside {
+    display: flex;
+    background: #173000;
+    padding: 3rem var(--horizontal_padding);
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+    overflow-x: scroll;
+    box-sizing: border-box;
+}
+
+.aside button {
+    border: none;
+    background: none;
+}
+
+.aside span {
+    white-space: nowrap;
+}
+
+.aside svg {
+    width: 26px;
+    height: 26px;
+    fill: #c7c6c6;
+}
+
+.aside a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #c7c6c6;
+    gap: 0.6rem;
+}
+
+@media screen and (min-width:700px) {
+    .aside {
+        flex-direction: column;
+        width: 40%;
+        align-items: flex-start;
+        overflow-x: auto;
+    }
+
+    .layout_wrapper {
+        display: flex;
+        gap: 2rem;
+    }
+}

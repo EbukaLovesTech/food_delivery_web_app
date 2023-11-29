@@ -1,0 +1,72 @@
+.listing_details div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.listing_details {
+    padding: 2rem var(--horizontal_padding);
+    background: var(--accent_color);
+    margin-bottom: 4rem;
+    border-bottom-left-radius: var(--image_b_rad);
+    border-bottom-right-radius: var(--image_b_rad);
+}
+
+.main>section:nth-child(1) {
+    padding: 2rem var(--horizontal_padding);
+}
+
+.img_wrapper img {
+    border-top-left-radius: var(--image_b_rad);
+    border-top-right-radius: var(--image_b_rad);
+}
+
+.img_wrapper {
+    background: var(--accent_color);
+}
+
+.farmlands h2 {
+    padding: 0 var(--horizontal_padding);
+}
+
+.listing_details p {
+    margin: 0;
+}
+
+@media screen and (min-width:650px) {
+    .farm_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .main>section:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .img_wrapper {
+        width: 40%;
+        background: transparent;
+        height: fit-content;
+    }
+
+    .img_wrapper img {
+        border-radius: var(--image_b_rad);
+    }
+
+    .listing_details {
+        width: 40%;
+        border-radius: var(--image_b_rad);
+        height: fit-content;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .farm_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

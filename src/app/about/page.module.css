@@ -1,0 +1,64 @@
+.first_section {
+    padding: 2rem var(--horizontal_padding);
+}
+
+.first_section img {
+    border-radius: var(--image_b_rad);
+}
+
+.about_us_info {
+    margin-bottom: 2rem;
+}
+
+.second_section {
+    padding: 2rem var(--horizontal_padding);
+}
+
+.mission {
+    margin-bottom: 3rem;
+}
+
+.number {
+    color: #A3D671;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.subscribe_wrapper {
+    padding: 0 var(--horizontal_padding);
+}
+
+@media screen and (min-width:1000px) {
+
+    .main h1,
+    .second_section h2 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .hero_img {
+        width: 40vw;
+    }
+
+    .main h1+div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_us_info {
+        width: 50vw;
+        margin: 0;
+        line-height: 1.7;
+    }
+
+    .mission_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6rem;
+    }
+
+    .number {
+        margin-top: 0;
+    }
+}
