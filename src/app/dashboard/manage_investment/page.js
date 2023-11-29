@@ -2,7 +2,7 @@ import farmImage from '../../../../public/pexels-tomas-anunziata-3876417.jpg';
 import style from './page.module.css';
 import Image from 'next/image';
 
-export default function () {
+export default function ManageInvestment() {
     return (
         <section className={style.investment_section}>
             <h1>Farm1</h1>
